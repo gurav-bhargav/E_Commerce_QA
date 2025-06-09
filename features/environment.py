@@ -31,7 +31,7 @@ def after_scenario(context, scenario):
     log_message('info', f'Closing the page for scenario {scenario.name}')
     video_file =  (context.page.video.path()) if context.page.video else None
     # print(video_file)
-    screenshoot_path=f'reports/screenshots/{'_'.join((scenario.name).split('--')[0].split(' '))}_{datetime.now().strftime("%Y%m%d%H%M%S")}.png'
+    screenshoot_path = f"reports/screenshots/{'_'.join((scenario.name).split('--')[0].split(' '))}_{datetime.now().strftime('%Y%m%d%H%M%S')}.png"
     context.page.screenshot(path=screenshoot_path)
     log_message('info', 'Screenshot is saved at desired location ....')
 
