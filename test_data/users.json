@@ -1,0 +1,18 @@
+[
+    {
+        "username":"abc_user",
+        "password":"abc@123"
+    },
+    {
+        "username":"cde_user",
+        "password":"cde@123"
+    },
+    {
+        "username":"efg_user",
+        "password":"efg@123"
+    },
+    {
+        "username":"ghi_user",
+        "password":"ghi@123"
+    }
+]
