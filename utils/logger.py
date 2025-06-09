@@ -12,9 +12,9 @@ def logger_setup(testName: str ):
         os.mkdir(logs_directory)
     
     if testName:
-        filename = f'reports/logs/{'_'.join(testName.split('--')[0].split(' '))}_{datetime.now().strftime("%Y%m%d%H%M%S")}_logs.log'
+        filename = f"reports/logs/{'_'.join(testName.split('--')[0].split(' '))}_{datetime.now().strftime('%Y%m%d%H%M%S')}_logs.log"
     else:
-        filename = f'reports/logs/{datetime.now().strftime("%Y%m%d%H%M%S")}_logs.log'
+        filename = f"reports/logs/{datetime.now().strftime('%Y%m%d%H%M%S')}_logs.log"
     logging.basicConfig(
         filename=filename,
         level=logging.INFO,
